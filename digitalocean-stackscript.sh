@@ -27,7 +27,7 @@
 
 # See Github for more info and to contribute!
 # -----------------------------------------------------------------------------
-# https://github.com/gizmovation/lnppstack
+# https://github.com/kha0s-tickler/lnppstack
 
 #<udf name="USERNAME" label="User to Create">
 #<udf name="PASSWORD" label="User Password">
@@ -39,10 +39,10 @@
 #<udf name="PRIVATEIP" label="Private IP Address" default="192.168.">
 #<udf name="NETMASK" label="Private IP Netmask" default="255.255.128.0">
 
-export linode=true
+export digitalocean=true
 
 # download the install script from github
-wget https://raw.github.com/gizmovation/lnppstack/master/install-stack.sh -O /tmp/install-stack.sh
+wget https://raw.github.com/kha0s-tickler/lnppstack/master/install-stack.sh -O /tmp/install-stack.sh
 chmod +x /tmp/install-stack.sh
 
 # execute the install script

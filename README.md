@@ -3,18 +3,16 @@
 Scripts to simplify installing, configuring, and maintaining nginx, php-fpm, and postgres on ubuntu.
 Tested on ubuntu 12.10.
 
-## Linode
+## Digital Ocean
 
-You can use these scripts to setup your linode VPS. If you find these scripts useful, please use our referral link below.
-
-[http://www.linode.com/](http://www.linode.com/?r=bed2c06e157de72a8f97d0c7035069800c9b342b)
+You can use these scripts to setup your Digital Ocean VPS. 
 
 ## Install Scripts
 
 To download and use initial install scripts, use the following commands (as root):
 
 ```bash
-wget https://raw.github.com/gizmovation/lnppscripts/master/install-stack.sh
+wget https://raw.github.com/kha0s-tickler/lnppscripts/master/install-stack.sh
 chmod u+x install-stack.sh
 ./install-stack.sh
 ```
@@ -48,5 +46,5 @@ sudo lnpp-helpers update
 None, use at your own risk!
 
 ## License
-
+a fork from http://github.com/gizmovation/lnppstack for linode VPS
 [MIT](http://opensource.org/licenses/MIT) 

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ###############################################################################
-### required inputs specified by linode stackscript or user input
+### required inputs specified by digitalocean stackscript or user input
 ###############################################################################
 
-if ! $linode; then
+if ! $digitalocean; then
 
   if [ ! "`whoami`" = "root" ]
   then
@@ -70,7 +70,7 @@ aptitude -y full-upgrade
 aptitude -y install git-core
 
 # clone the lnpp stack repo
-git clone https://github.com/gizmovation/lnppstack.git /tmp/lnppstack
+git clone https://github.com/kha0s-tickler/lnppstack.git /tmp/lnppstack
 
 # copy the helpers
 cp /tmp/lnppstack/helpers/* /usr/local/bin/
@@ -302,7 +302,7 @@ LNPP Stack installation complete. Your server will need to be rebooted. You can 
 
 Once you login, you can start creating and managing sites using the helper scripts available in /usr/local/bin.
 
-For more info, please visit: https://github.com/gizmovation/lnppstack
+For more info, please visit: https://github.com/kha0s-tickler/lnppstack
 
 Enjoy!
 EOT
